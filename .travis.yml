@@ -18,7 +18,7 @@ before_install:
   - docker build -t kojinaka/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true kojinaka/docker-react npm run test
+  - docker run -e CI=true kojinaka/react-test npm run test
 
 deploy:
   provider: script
